@@ -1,0 +1,10 @@
+senai\service\fornecedor\FornecedorService.class
+senai\Main.class
+senai\repository\FornecedorRepositoryImpl.class
+senai\model\Equipamento.class
+senai\service\equipamento\EquipamentoService.class
+senai\service\equipamento\EquipamentoServiceImpl.class
+senai\database\Conexao.class
+senai\service\fornecedor\FornecedorServiceImpl.class
+senai\model\Fornecedor.class
+senai\repository\FornecedorRepository.class
