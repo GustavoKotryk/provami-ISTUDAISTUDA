@@ -1,6 +1,8 @@
 import org.junit.jupiter.api.*;
 import senai.database.Conexao;
 import senai.model.Equipamento;
+import senai.repository.EquipamentoRepositoryImpl;
+import senai.repository.FornecedorRepositoryImpl;
 import senai.service.equipamento.EquipamentoService;
 import senai.service.equipamento.EquipamentoServiceImpl;
 
@@ -60,7 +62,7 @@ public class EquipamentoServiceIntegrationTest {
 
     @BeforeEach
     void setup() throws Exception {
-        equipamentoService = new EquipamentoServiceImpl();
+        equipamentoService = new EquipamentoServiceImpl(new EquipamentoRepositoryImpl(), new FornecedorRepositoryImpl());
 
         // Limpa o banco antes de cada teste usando SQL direto
         try (Connection conn = Conexao.conectar();

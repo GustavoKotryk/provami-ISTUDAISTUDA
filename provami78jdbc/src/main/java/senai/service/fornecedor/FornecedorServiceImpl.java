@@ -10,6 +10,7 @@ import java.util.List;
 public class FornecedorServiceImpl implements FornecedorService{
 
     private final FornecedorRepository repository;
+
     public FornecedorServiceImpl(){
         this.repository = new FornecedorRepositoryImpl();
     }
