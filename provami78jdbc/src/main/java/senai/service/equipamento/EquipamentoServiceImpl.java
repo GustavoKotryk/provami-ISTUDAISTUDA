@@ -1,11 +1,13 @@
 package senai.service.equipamento;
 
+import senai.database.Conexao;
 import senai.model.Equipamento;
 
-import java.sql.SQLException;
+import java.sql.*;
 import java.util.List;
 
 public class EquipamentoServiceImpl implements EquipamentoService{
+
     @Override
     public Equipamento criarEquipamento(Equipamento equipamento) throws SQLException {
         return null;
